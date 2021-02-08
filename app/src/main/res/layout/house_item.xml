@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="house"
+            type="com.nihal.housingapp.models.House" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        app:cardCornerRadius="8dp"
+        app:layout_goneMarginBottom="20dp"
+        android:elevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="18dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/houseImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                app:imageUrl="@{house.image}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/corneredImageView"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/housePrice"
+                style="@style/detailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text='@{`€` + String.format("%,d", house.price)}'
+                app:layout_constraintStart_toEndOf="@+id/houseImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/houseAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text='@{house.zip.replace(" ", "") + ` ` + house.city }'
+                android:textColor="#000000"
+                app:layout_constraintStart_toEndOf="@+id/houseImage"
+                app:layout_constraintTop_toBottomOf="@+id/housePrice" />
+
+            <include
+                layout="@layout/house_details_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="58dp"
+                app:layout_constraintStart_toEndOf="@+id/houseImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bedroomsAmount"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="60dp"
+                android:text="@{String.valueOf(house.bedrooms)}"
+                app:layout_constraintStart_toEndOf="@+id/houseImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bathroomsAmount"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="143dp"
+                android:layout_marginTop="60dp"
+                android:text="@{String.valueOf(house.bathrooms)}"
+                app:layout_constraintStart_toEndOf="@+id/houseImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

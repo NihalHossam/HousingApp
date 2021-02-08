@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bedroomIcon"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_bed"
+            android:layout_marginTop="2dp"/>
+
+        <ImageView
+            android:id="@+id/bathroomIcon"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@id/bedroomIcon"
+            android:src="@drawable/ic_bath" />
+
+
+    </RelativeLayout>
+
+</layout>

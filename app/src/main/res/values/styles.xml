@@ -1,0 +1,56 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/darkgrey</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Cornered Image theme -->
+    <style name="corneredImageView" >
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <!-- Splash Screen theme -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@drawable/splashscreen</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimaryDark">@color/purple</item>
+    </style>
+
+    <!-- Texts styles -->
+    <style name="boldTitle">
+        <item name="android:fontFamily">@font/heebo_medium</item>
+        <item name="android:textSize">@dimen/title</item>
+        <item name="android:textColor">@color/purple</item>
+    </style>
+
+    <style name="detailTitle">
+        <item name="android:fontFamily">@font/heebo_bold</item>
+        <item name="android:textSize">@dimen/detailTitle</item>
+        <item name="android:textColor">@color/lightBlack</item>
+    </style>
+
+    <style name="error">
+        <item name="android:fontFamily">@font/heebo_medium</item>
+        <item name="android:textSize">@dimen/detailTitle</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="body">
+        <item name="android:fontFamily">@font/heebo</item>
+        <item name="android:textSize">@dimen/body</item>
+        <item name="android:textColor">@color/lightBlack</item>
+    </style>
+
+    <style name="number">
+        <item name="android:fontFamily">@font/heebo</item>
+        <item name="android:textSize">@dimen/detailTitle</item>
+        <item name="android:textColor">@color/lightBlack</item>
+    </style>
+
+</resources>

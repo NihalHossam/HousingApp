@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingTop">60dp</dimen>
+    <dimen name="paddingLR">37.5dp</dimen> <!-- padding left and right -->
+    <dimen name="title">24sp</dimen>
+    <dimen name="detailTitle">22sp</dimen>
+    <dimen name="body">18sp</dimen>
+    <dimen name="detail">18sp</dimen>
+</resources>

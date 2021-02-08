@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">RealEstate</string>
+
+    <!--   Home Fragment -->
+    <string name="homeTitle">Find Your Dream House</string>
+    <string name="errorMessage">An Error Occurred: %1$s</string>
+    <string name="retry">Retry</string>
+
+    <!--    Detail Fragment  -->
+    <string name="price">Price: </string>
+    <string name="description">About This House: </string>
+    <string name="location">Location On Map</string>
+    <string name="locationHint">Click on the map to start navigation to this house.</string>
+    <string name="save">Save</string>
+
+    <!--    Saved Fragment  -->
+    <string name="savedTitle">Your saved houses.</string>
+    <string name="savedHint">Swipe to remove.</string>
+
+    <!--    Bottom Navigation Menu  -->
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="saved">Saved</string>
+
+    <!--    Search Fragment  -->
+    <string name="searchHint">Search.</string>
+    <string name="searchbarHint">Search by city or zipcode...</string>
+    <string name="noResultsFound">No results are found.</string>
+
+    <!--   For errors  -->
+    <string name="noInternetConnection">No internet connection.</string>
+    <string name="networkFailure">Network Failure.</string>
+    <string name="conversionError">Conversion Error Has Occurred.</string>
+
+
+</resources>
